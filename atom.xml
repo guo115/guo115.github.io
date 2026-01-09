@@ -169,11 +169,11 @@
     
     
     
-    <category term="时钟" scheme="http://example.com/tags/%E6%97%B6%E9%92%9F/"/>
-    
     <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
     <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="时钟" scheme="http://example.com/tags/%E6%97%B6%E9%92%9F/"/>
     
   </entry>
   
@@ -196,11 +196,11 @@
     
     
     
+    <category term="butterfly" scheme="http://example.com/tags/butterfly/"/>
+    
     <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
     <category term="hexo" scheme="http://example.com/tags/hexo/"/>
-    
-    <category term="butterfly" scheme="http://example.com/tags/butterfly/"/>
     
   </entry>
   
