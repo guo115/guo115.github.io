@@ -25,6 +25,14 @@
       
       
       
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 搜索 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -37,19 +45,22 @@
         <content type="html"><![CDATA[<h1 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h1><h3 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h3><p>主题拥有Main(稳定版)和Dev(测试版)两种版本, 我们推荐您安装使用Github(稳定版)以获得最佳的主题体验</p><h4 id="方式一-Github-推荐"><a href="#方式一-Github-推荐" class="headerlink" title="方式一(Github 推荐):"></a>方式一(Github 推荐):</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b main https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>如遇安装不上可以使用以下url代理安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b main https://ghproxy.com/https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><h4 id="方式二-Release-推荐"><a href="#方式二-Release-推荐" class="headerlink" title="方式二(Release 推荐):"></a>方式二(Release 推荐):</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">下载 最新 release 版本 解压到 themes 目录，并将解压出的文件夹重命名为 &lt;anzhiyu&gt;。</span><br></pre></td></tr></table></figure><p>方式三(npm安装):</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-theme-anzhiyu</span><br></pre></td></tr></table></figure><p>此方法只支持 Hexo 5.0.0 以上版本 通过 npm 安装并不会在 themes 里生成主题文件夹，而是在 node_modules 里生成</p><h3 id="测试版Dev"><a href="#测试版Dev" class="headerlink" title="测试版Dev"></a>测试版Dev</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b dev https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>测试版可能存在 bug，追求稳定的请安装稳定版</p><h3 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h3><p>打开 Hexo 根目录下的 config.yml, 找到以下配置项，把主题改为anzhiyu</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: anzhiyu</span><br></pre></td></tr></table></figure><h3 id="安装-pug-和-stylus-渲染插件"><a href="#安装-pug-和-stylus-渲染插件" class="headerlink" title="安装 pug 和 stylus 渲染插件"></a>安装 pug 和 stylus 渲染插件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><p>无法安装可以使用cnpm进行安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save --registry=http://registry.npmmirror.com</span><br></pre></td></tr></table></figure><h3 id="覆盖配置"><a href="#覆盖配置" class="headerlink" title="覆盖配置"></a>覆盖配置</h3><p>覆盖配置可以使主题配置放置在 anzhiyu 目录之外，避免在更新主题时丢失自定义的配置。</p><p>通过 Npm 安装主题的用户可忽略，其他用户建议学习使用。</p><p>macos&#x2F;linux 在博客根目录运行<br>cp -rf .&#x2F;themes&#x2F;anzhiyu&#x2F;_config.yml .&#x2F;_config.anzhiyu.yml<br>windows 复制&#x2F;themes&#x2F;anzhiyu&#x2F;_config.yml此文件到 hexo 根目录，并重命名为_config.anzhiyu.yml<br>以后如果修改任何主题配置，都只需修改 _config.anzhiyu.yml 的配置即可。</p><h3 id="本地启动-hexo"><a href="#本地启动-hexo" class="headerlink" title="本地启动 hexo"></a>本地启动 hexo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">此时就能在看到效果了。</span><br></pre></td></tr></table></figure><h3 id="升级方法"><a href="#升级方法" class="headerlink" title="升级方法"></a>升级方法</h3><h3 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h3><p>适用于通过 Github 或 Release 压缩包主题，且没有自行修改任何代码的情况。</p><p>先将原文件夹重命名为别的名称，例如 anzhiyu-bkp，用于升级失败进行回退；</p><p>选择自己的安装方式升级</p><p>Github：重新重新执行安装命令即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">git clone -b main https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>1</p><p>Release：按照安装步骤，下载 release 并解压重命名为 anzhiyu；</p><p>比对升级后的配置文件_config.yml，如果某些配置发生了变化（改名或弃用），release 的说明里会特别提示或给出配置文件版本对比diff，同步修改原配置文件即可。</p><h3 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h3><p>适用于通过 Npm 安装主题。</p><p>在博客目录下执行命令：</p><p>bash</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update --save hexo-theme-anzhiyu</span><br></pre></td></tr></table></figure><p>1<br>比对升级后的配置文件_config.yml,如果某些配置发生了变化（改名或弃用），release 的说明里会特别提示或给出配置文件版本对比diff，同步修改原配置文件即可。</p><pre><code>### 方式三全量更新：删除theme/anzhiyu文件夹，然后重新执行安装命令即可。</code></pre>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>历史上的今天</title>
-      <link href="/posts/df2a.html"/>
-      <url>/posts/df2a.html</url>
-      
-        <content type="html"><![CDATA[<h3 id="NPM-插件安装的部署方法："><a href="#NPM-插件安装的部署方法：" class="headerlink" title="NPM 插件安装的部署方法："></a>NPM 插件安装的部署方法：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+          
+          <category> 主题 </category>
+          
+      </categories>
       
       
+        <tags>
+            
+            <tag> 主题 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> anzhiyu </tag>
+            
+        </tags>
       
     </entry>
     
@@ -69,6 +80,27 @@
     
     
     <entry>
+      <title>历史上的今天</title>
+      <link href="/posts/df2a.html"/>
+      <url>/posts/df2a.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="NPM-插件安装的部署方法："><a href="#NPM-插件安装的部署方法：" class="headerlink" title="NPM 插件安装的部署方法："></a>NPM 插件安装的部署方法：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 侧边栏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>添加今日诗词</title>
       <link href="/posts/94a6.html"/>
       <url>/posts/94a6.html</url>
@@ -79,7 +111,11 @@
       
         <tags>
             
-            <tag> -hexo -诗词 -主题 </tag>
+            <tag> 主题 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> 诗词 </tag>
             
         </tags>
       
@@ -98,11 +134,11 @@
       
         <tags>
             
+            <tag> 时钟 </tag>
+            
             <tag> 主题 </tag>
             
             <tag> hexo </tag>
-            
-            <tag> 时钟 </tag>
             
         </tags>
       
@@ -115,17 +151,17 @@
       <link href="/posts/2700.html"/>
       <url>/posts/2700.html</url>
       
-        <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在你的 Hexo 根目录里</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><h4 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h4><p>修改 Hexo 根目录下的 ，把主题改为 <code>_config.ymlbutterfly</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><h4 id="导航目录"><a href="#导航目录" class="headerlink" title="导航目录"></a>导航目录</h4><p>即设置顶部右上方区域的这块内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Menu 目录</span><br><span class="line">menu:</span><br><span class="line">  首页: / || fas fa-home</span><br><span class="line">  归档: /archives/ || fas fa-archive</span><br><span class="line">  标签: /tags/ || fas fa-tags</span><br><span class="line">  分类: /categories/ || fas fa-folder-open</span><br><span class="line">  友链: /link/ || fas fa-link</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br><span class="line"># 格式如下：</span><br><span class="line"># [标题]: [路径] || [图标]</span><br></pre></td></tr></table></figure><p>这里的目录中，<code>tags</code>、<code>categories</code>、<code>link</code>、<code>about</code>目录默认不存在，需要在CMD窗口中使用命令生成对应页面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page link</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p>之后给创建的页面设置成对应的页面类型</p><h4 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h4><p>安装插件</p><p>安装 <code>hexo-generator-search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>在主题<code>_config.yml</code> 文件中添加<code>local_search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  # Choose: algolia_search / local_search / docsearch</span><br><span class="line">  # leave it empty if you don&#x27;t need search</span><br><span class="line">  use: local_search</span><br><span class="line">  placeholder:</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在你的 Hexo 根目录里</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><h4 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h4><p>修改 Hexo 根目录下的 ，把主题改为 <code>_config.ymlbutterfly</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><h4 id="导航目录"><a href="#导航目录" class="headerlink" title="导航目录"></a>导航目录</h4><p>即设置顶部右上方区域的这块内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Menu 目录</span><br><span class="line">menu:</span><br><span class="line">  首页: / || fas fa-home</span><br><span class="line">  归档: /archives/ || fas fa-archive</span><br><span class="line">  标签: /tags/ || fas fa-tags</span><br><span class="line">  分类: /categories/ || fas fa-folder-open</span><br><span class="line">  友链: /link/ || fas fa-link</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br><span class="line">  留言: /Message/ || fas fa-comment</span><br><span class="line"># 格式如下：</span><br><span class="line"># [标题]: [路径] || [图标]</span><br></pre></td></tr></table></figure><p>这里的目录中，<code>tags</code>、<code>categories</code>、<code>link</code>、<code>about</code>目录默认不存在，需要在CMD窗口中使用命令生成对应页面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page link</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p>之后给创建的页面设置成对应的页面类型</p><h4 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h4><p>安装插件</p><p>安装 <code>hexo-generator-search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>在主题<code>_config.yml</code> 文件中添加<code>local_search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  # Choose: algolia_search / local_search / docsearch</span><br><span class="line">  # leave it empty if you don&#x27;t need search</span><br><span class="line">  use: local_search</span><br><span class="line">  placeholder:</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
         <tags>
             
-            <tag> butterfly </tag>
-            
             <tag> 主题 </tag>
             
             <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
             
         </tags>
       

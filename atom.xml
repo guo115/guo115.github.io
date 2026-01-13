@@ -43,7 +43,7 @@
     <link href="http://example.com/posts/c5be.html"/>
     <id>http://example.com/posts/c5be.html</id>
     <published>2026-01-08T01:18:21.000Z</published>
-    <updated>2026-01-08T01:34:19.150Z</updated>
+    <updated>2026-01-13T01:24:30.059Z</updated>
     
     <content type="html"><![CDATA[<h3 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h3><p>安装插件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>可以在根 _config.yml 中配置这个插件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> ##Local Search本地搜索</span><br><span class="line">search:</span><br><span class="line">path: search.xml</span><br><span class="line">field: post</span><br><span class="line">format: html</span><br><span class="line">limit: 10000</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>修改 主题配置文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: false</span><br><span class="line">  preload: false</span><br><span class="line">  CDN:</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -57,6 +57,10 @@
     
     
     
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="搜索" scheme="http://example.com/tags/%E6%90%9C%E7%B4%A2/"/>
+    
   </entry>
   
   <entry>
@@ -64,7 +68,7 @@
     <link href="http://example.com/posts/10023.html"/>
     <id>http://example.com/posts/10023.html</id>
     <published>2026-01-07T03:37:04.000Z</published>
-    <updated>2026-01-07T05:14:01.390Z</updated>
+    <updated>2026-01-13T01:21:14.899Z</updated>
     
     <content type="html"><![CDATA[<h1 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h1><h3 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h3><p>主题拥有Main(稳定版)和Dev(测试版)两种版本, 我们推荐您安装使用Github(稳定版)以获得最佳的主题体验</p><h4 id="方式一-Github-推荐"><a href="#方式一-Github-推荐" class="headerlink" title="方式一(Github 推荐):"></a>方式一(Github 推荐):</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b main https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>如遇安装不上可以使用以下url代理安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b main https://ghproxy.com/https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><h4 id="方式二-Release-推荐"><a href="#方式二-Release-推荐" class="headerlink" title="方式二(Release 推荐):"></a>方式二(Release 推荐):</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">下载 最新 release 版本 解压到 themes 目录，并将解压出的文件夹重命名为 &lt;anzhiyu&gt;。</span><br></pre></td></tr></table></figure><p>方式三(npm安装):</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-theme-anzhiyu</span><br></pre></td></tr></table></figure><p>此方法只支持 Hexo 5.0.0 以上版本 通过 npm 安装并不会在 themes 里生成主题文件夹，而是在 node_modules 里生成</p><h3 id="测试版Dev"><a href="#测试版Dev" class="headerlink" title="测试版Dev"></a>测试版Dev</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b dev https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>测试版可能存在 bug，追求稳定的请安装稳定版</p><h3 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h3><p>打开 Hexo 根目录下的 config.yml, 找到以下配置项，把主题改为anzhiyu</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: anzhiyu</span><br></pre></td></tr></table></figure><h3 id="安装-pug-和-stylus-渲染插件"><a href="#安装-pug-和-stylus-渲染插件" class="headerlink" title="安装 pug 和 stylus 渲染插件"></a>安装 pug 和 stylus 渲染插件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><p>无法安装可以使用cnpm进行安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save --registry=http://registry.npmmirror.com</span><br></pre></td></tr></table></figure><h3 id="覆盖配置"><a href="#覆盖配置" class="headerlink" title="覆盖配置"></a>覆盖配置</h3><p>覆盖配置可以使主题配置放置在 anzhiyu 目录之外，避免在更新主题时丢失自定义的配置。</p><p>通过 Npm 安装主题的用户可忽略，其他用户建议学习使用。</p><p>macos&#x2F;linux 在博客根目录运行<br>cp -rf .&#x2F;themes&#x2F;anzhiyu&#x2F;_config.yml .&#x2F;_config.anzhiyu.yml<br>windows 复制&#x2F;themes&#x2F;anzhiyu&#x2F;_config.yml此文件到 hexo 根目录，并重命名为_config.anzhiyu.yml<br>以后如果修改任何主题配置，都只需修改 _config.anzhiyu.yml 的配置即可。</p><h3 id="本地启动-hexo"><a href="#本地启动-hexo" class="headerlink" title="本地启动 hexo"></a>本地启动 hexo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">此时就能在看到效果了。</span><br></pre></td></tr></table></figure><h3 id="升级方法"><a href="#升级方法" class="headerlink" title="升级方法"></a>升级方法</h3><h3 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h3><p>适用于通过 Github 或 Release 压缩包主题，且没有自行修改任何代码的情况。</p><p>先将原文件夹重命名为别的名称，例如 anzhiyu-bkp，用于升级失败进行回退；</p><p>选择自己的安装方式升级</p><p>Github：重新重新执行安装命令即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">git clone -b main https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>1</p><p>Release：按照安装步骤，下载 release 并解压重命名为 anzhiyu；</p><p>比对升级后的配置文件_config.yml，如果某些配置发生了变化（改名或弃用），release 的说明里会特别提示或给出配置文件版本对比diff，同步修改原配置文件即可。</p><h3 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h3><p>适用于通过 Npm 安装主题。</p><p>在博客目录下执行命令：</p><p>bash</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update --save hexo-theme-anzhiyu</span><br></pre></td></tr></table></figure><p>1<br>比对升级后的配置文件_config.yml,如果某些配置发生了变化（改名或弃用），release 的说明里会特别提示或给出配置文件版本对比diff，同步修改原配置文件即可。</p><pre><code>### 方式三全量更新：删除theme/anzhiyu文件夹，然后重新执行安装命令即可。</code></pre>]]></content>
     
@@ -76,26 +80,14 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>历史上的今天</title>
-    <link href="http://example.com/posts/df2a.html"/>
-    <id>http://example.com/posts/df2a.html</id>
-    <published>2025-12-09T06:31:23.000Z</published>
-    <updated>2025-12-09T07:13:22.823Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="NPM-插件安装的部署方法："><a href="#NPM-插件安装的部署方法：" class="headerlink" title="NPM 插件安装的部署方法："></a>NPM 插件安装的部署方法：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>]]></content>
+    <category term="主题" scheme="http://example.com/categories/%E4%B8%BB%E9%A2%98/"/>
     
     
-      
-      
-    <summary type="html">&lt;h3 id=&quot;NPM-插件安装的部署方法：&quot;&gt;&lt;a href=&quot;#NPM-插件安装的部署方法：&quot; class=&quot;headerlink&quot; title=&quot;NPM 插件安装的部署方法：&quot;&gt;&lt;/a&gt;NPM 插件安装的部署方法：&lt;/h3&gt;&lt;figure class=&quot;highlight </summary>
-      
+    <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
     
-    
+    <category term="anzhiyu" scheme="http://example.com/tags/anzhiyu/"/>
     
   </entry>
   
@@ -121,11 +113,35 @@
   </entry>
   
   <entry>
+    <title>历史上的今天</title>
+    <link href="http://example.com/posts/df2a.html"/>
+    <id>http://example.com/posts/df2a.html</id>
+    <published>2025-12-09T06:31:23.000Z</published>
+    <updated>2026-01-13T01:23:30.174Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="NPM-插件安装的部署方法："><a href="#NPM-插件安装的部署方法：" class="headerlink" title="NPM 插件安装的部署方法："></a>NPM 插件安装的部署方法：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;NPM-插件安装的部署方法：&quot;&gt;&lt;a href=&quot;#NPM-插件安装的部署方法：&quot; class=&quot;headerlink&quot; title=&quot;NPM 插件安装的部署方法：&quot;&gt;&lt;/a&gt;NPM 插件安装的部署方法：&lt;/h3&gt;&lt;figure class=&quot;highlight </summary>
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="侧边栏" scheme="http://example.com/tags/%E4%BE%A7%E8%BE%B9%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>添加今日诗词</title>
     <link href="http://example.com/posts/94a6.html"/>
     <id>http://example.com/posts/94a6.html</id>
     <published>2025-12-02T06:26:25.000Z</published>
-    <updated>2025-12-02T06:46:56.261Z</updated>
+    <updated>2026-01-13T01:26:54.985Z</updated>
     
     <content type="html"><![CDATA[<p>本文将介绍如何增添随机诗词的展示。</p><p>具体效果如下：</p><p><img src="/img/%E8%AF%97%E8%AF%8D.jpg"></p><blockquote><p>刷新页面会有变化哦~~~~</p></blockquote><br/><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><ol><li><p>输入命令<code>hexo n page &quot;Message&quot;</code>在<code>\source</code>文件夹下新建一个<code>Message</code>文件夹（名字可以自定义）</p></li><li><p>进入Message文件夹，编辑<code>index.md</code>文件，添加如下代码：</p></li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;poem-wrap&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;poem-border poem-left&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;poem-border poem-right&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;h&gt;念两句诗&lt;/h&gt;</span><br><span class="line">    &lt;p id=&quot;poem&quot;&gt;挑选中...&lt;/p&gt;</span><br><span class="line">    &lt;p id=&quot;info&quot;&gt;</span><br><span class="line">  &lt;script src=&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    jinrishici.load(function(result) &#123;</span><br><span class="line">      poem.innerHTML = result.data.content</span><br><span class="line">      info.innerHTML = &#x27;【&#x27; + result.data.origin.dynasty + &#x27;】&#x27; + result.data.origin.author + &#x27;《&#x27; + result.data.origin.title + &#x27;》&#x27;</span><br><span class="line">      document.getElementById(&quot;poem&quot;).value(poem);</span><br><span class="line">      document.getElementById(&quot;info&quot;).value(info);  </span><br><span class="line">  &#125;);</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><ol start="3"><li>在\themes\butterfly\source\css\index.styl中添加以下代码（直接在底部添加）：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">/*诗*/</span><br><span class="line">.poem-wrap &#123;</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 730px;</span><br><span class="line">    max-width: 80%;</span><br><span class="line">    border: 2px solid #797979;</span><br><span class="line">    border-top: none;</span><br><span class="line">    text-align: center;</span><br><span class="line">    margin: 80px auto;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.poem-wrap h &#123;</span><br><span class="line">    font-size: 40px;</span><br><span class="line">    font-style:oblique;</span><br><span class="line">    position: relative;</span><br><span class="line">    margin-top: -40px;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    letter-spacing: 4px;</span><br><span class="line">    color: #797979</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.poem-wrap p &#123;</span><br><span class="line">    width: 70%;</span><br><span class="line">    margin: auto;</span><br><span class="line">    line-height: 30px;</span><br><span class="line">    color: #797979;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.poem-wrap p#poem &#123;</span><br><span class="line">    font-size: 22px;</span><br><span class="line">    margin: 15px auto;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.poem-wrap p#info &#123;</span><br><span class="line">    font-size: 15px;</span><br><span class="line">    margin: 15px auto;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.poem-border &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    height: 2px;</span><br><span class="line">    width: 27%;</span><br><span class="line">    background-color: #797979;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.poem-right &#123;</span><br><span class="line">    right: 0;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.poem-left &#123;</span><br><span class="line">    left: 0;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">@media (max-width: 685px) &#123;</span><br><span class="line">    .poem-border &#123;</span><br><span class="line">        width: 18%;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">@media (max-width: 500px) &#123;</span><br><span class="line">    .poem-wrap &#123;</span><br><span class="line">        margin-top: 60px;</span><br><span class="line">        margin-bottom: 20px;</span><br><span class="line">        border-top: 2px solid #797979;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    .poem-wrap h &#123;</span><br><span class="line">        margin: 20px 6px;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    .poem-border &#123;</span><br><span class="line">        display: none;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="4"><li>找到主题配置文件_config.butterfly.yml，在menu位置中添加留言页面的连接</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  留言: /Message/ || fas fa-comment</span><br></pre></td></tr></table></figure><ol start="5"><li>重新部署，就可以看到效果啦.</li></ol><br/><p>这里调用的是<code>今日诗词API</code>，是一个可以返回一句古诗词名句的接口。</p><p>它可以通过图片和 JSON 格式调用。今日诗词 API 根据不同地点、时间、节日、季节、天气、景观、城市进行智能推荐。</p><p>访问链接：<a href="https://www.jinrishici.com/">https://www.jinrishici.com/</a></p>]]></content>
     
@@ -144,7 +160,11 @@
     
     
     
-    <category term="-hexo -诗词 -主题" scheme="http://example.com/tags/hexo-%E8%AF%97%E8%AF%8D-%E4%B8%BB%E9%A2%98/"/>
+    <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="诗词" scheme="http://example.com/tags/%E8%AF%97%E8%AF%8D/"/>
     
   </entry>
   
@@ -169,11 +189,11 @@
     
     
     
+    <category term="时钟" scheme="http://example.com/tags/%E6%97%B6%E9%92%9F/"/>
+    
     <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
     <category term="hexo" scheme="http://example.com/tags/hexo/"/>
-    
-    <category term="时钟" scheme="http://example.com/tags/%E6%97%B6%E9%92%9F/"/>
     
   </entry>
   
@@ -182,9 +202,9 @@
     <link href="http://example.com/posts/2700.html"/>
     <id>http://example.com/posts/2700.html</id>
     <published>2025-11-18T08:04:51.000Z</published>
-    <updated>2025-11-18T08:42:40.729Z</updated>
+    <updated>2026-01-13T00:59:07.017Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在你的 Hexo 根目录里</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><h4 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h4><p>修改 Hexo 根目录下的 ，把主题改为 <code>_config.ymlbutterfly</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><h4 id="导航目录"><a href="#导航目录" class="headerlink" title="导航目录"></a>导航目录</h4><p>即设置顶部右上方区域的这块内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Menu 目录</span><br><span class="line">menu:</span><br><span class="line">  首页: / || fas fa-home</span><br><span class="line">  归档: /archives/ || fas fa-archive</span><br><span class="line">  标签: /tags/ || fas fa-tags</span><br><span class="line">  分类: /categories/ || fas fa-folder-open</span><br><span class="line">  友链: /link/ || fas fa-link</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br><span class="line"># 格式如下：</span><br><span class="line"># [标题]: [路径] || [图标]</span><br></pre></td></tr></table></figure><p>这里的目录中，<code>tags</code>、<code>categories</code>、<code>link</code>、<code>about</code>目录默认不存在，需要在CMD窗口中使用命令生成对应页面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page link</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p>之后给创建的页面设置成对应的页面类型</p><h4 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h4><p>安装插件</p><p>安装 <code>hexo-generator-search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>在主题<code>_config.yml</code> 文件中添加<code>local_search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  # Choose: algolia_search / local_search / docsearch</span><br><span class="line">  # leave it empty if you don&#x27;t need search</span><br><span class="line">  use: local_search</span><br><span class="line">  placeholder:</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在你的 Hexo 根目录里</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><h4 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h4><p>修改 Hexo 根目录下的 ，把主题改为 <code>_config.ymlbutterfly</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><h4 id="导航目录"><a href="#导航目录" class="headerlink" title="导航目录"></a>导航目录</h4><p>即设置顶部右上方区域的这块内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Menu 目录</span><br><span class="line">menu:</span><br><span class="line">  首页: / || fas fa-home</span><br><span class="line">  归档: /archives/ || fas fa-archive</span><br><span class="line">  标签: /tags/ || fas fa-tags</span><br><span class="line">  分类: /categories/ || fas fa-folder-open</span><br><span class="line">  友链: /link/ || fas fa-link</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br><span class="line">  留言: /Message/ || fas fa-comment</span><br><span class="line"># 格式如下：</span><br><span class="line"># [标题]: [路径] || [图标]</span><br></pre></td></tr></table></figure><p>这里的目录中，<code>tags</code>、<code>categories</code>、<code>link</code>、<code>about</code>目录默认不存在，需要在CMD窗口中使用命令生成对应页面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page link</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p>之后给创建的页面设置成对应的页面类型</p><h4 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h4><p>安装插件</p><p>安装 <code>hexo-generator-search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>在主题<code>_config.yml</code> 文件中添加<code>local_search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  # Choose: algolia_search / local_search / docsearch</span><br><span class="line">  # leave it empty if you don&#x27;t need search</span><br><span class="line">  use: local_search</span><br><span class="line">  placeholder:</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -196,11 +216,11 @@
     
     
     
-    <category term="butterfly" scheme="http://example.com/tags/butterfly/"/>
-    
     <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
     <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="butterfly" scheme="http://example.com/tags/butterfly/"/>
     
   </entry>
   
